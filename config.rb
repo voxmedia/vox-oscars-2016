@@ -1,6 +1,7 @@
 ###
 # Extensions
 ###
+require './time.rb'
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -22,6 +23,9 @@ activate :google_drive,
 # activate :google_drive, load_sheets: {
 #     :spreadsheet => 'my_key'
 # }
+set :last_updated, last_updated
+set :last_updated_hour, last_updated_hour
+set :display_date, display_date
 
 # Chorus integration
 #
@@ -48,10 +52,10 @@ set :vertical, 'vox'
 set :publish_date, '2016-02-17 15:41'
 
 # The authors of this graphic
-set :authors, 'sarahfrostenson'
+set :authors, 'Sarah Frostenson'
 
 # Theme: dark or light
-set :theme, 'dark'
+set :theme, 'light'
 
 set :title, data.microcopy['title']
 set :meta_description, data.microcopy['meta_description']

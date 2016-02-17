@@ -1,6 +1,108 @@
 @import 'framework';
-
+@import 'vars';
 @import 'modules/snippets';
 @import 'modules/nav-theme';
+@import 'modules/minimal-tophat';
 
 @import 'base';
+
+p a {
+  font-weight: bold;
+}
+
+.isotope-holder {
+  position: relative;
+  width: 100%;
+  margin-top: -20px;
+}
+
+
+// navigation UI
+.filters ul {
+  list-style-type:none;
+}
+.filters ul li {
+  display:inline;
+  padding: 5px;
+  font-size: 0.8rem;
+  @media only screen and (min-width: $break_small) {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+.filters ul li .filter {
+  display:inline-block;
+  position:relative;
+}
+
+.filters ul li a {
+  color: #4D4D4D;
+  font-weight: 400;
+}
+
+// on smaller breakpoints, hide sort by and filter by text
+#sort-list > li:nth-child(1),
+#filter-list > li:nth-child(1) {
+  display: none;
+  @media only screen and (min-width: $break_small) {
+    display: block;
+  }
+}
+.filters ul .active a {
+  background: #4F7177 none repeat scroll 0% 0% !important;
+  padding: 15px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.filters ul li a:hover {
+  background: #4F7177 none repeat scroll 0% 0% !important;
+  padding: 15px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+// images
+.item {
+  display: inline-block;
+  width: 18%;
+  padding: .3rem;
+}
+.item:hover {
+  cursor:pointer;
+}
+.item:hover img {
+  opacity:.8;
+  filter:alpha(opacity=80);
+}
+
+// citation styles
+.small_logo {
+	float: right;
+  margin-top: -52px;
+	opacity:0.8;
+  @media only screen and (min-width: $break_medium) {
+    margin-top: -50px;
+  }
+}
+.small_logo path {
+  fill: #4C4E4D;
+}
+
+.citation {
+  font-size: 0.7rem;
+  line-height: 15px;
+  max-width: 250px;
+    @media only screen and (min-width: 500px) {
+      font-size: 0.8rem;
+      max-width: 100%;
+  }
+}
+cite p {
+	font-size: 0.6rem;
+  @media only screen and (min-width: $break_medium) {
+    font-size: 0.7rem;
+  }
+}
