@@ -27,3 +27,11 @@ To setup chorus deployment...
 
     bundle exec rake add_chorus_remote
     git push chorus master
+
+TO DO:
+- actually embed the video correctly
+- fix sort order, not alphabetical at present
+
+- functionality of filters
+- get photos for all
+- style the filters + order by
