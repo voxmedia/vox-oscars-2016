@@ -29,11 +29,12 @@ To setup chorus deployment...
     git push chorus master
 
 TO DO:
-- fix sort order, not alphabetical at present
-- functionality of filters + rank
 - style the filters/ sort bys
+- hover/active states for the sorters/filters
 
+asked:
 - Do we want to include movie availability? (filter)
 - Need the ranks
 - Will each movie have a popup description? Or should I just plan to add the movie title to the image itself?
   - if so, embed video correctly
+- Fact check my classes
