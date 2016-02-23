@@ -13,9 +13,13 @@ p a {
 .isotope-holder {
   position: relative;
   width: 100%;
-  margin-top: -20px;
 }
 
+.interactive-wide {
+  width: calc(100% - 1.875rem);
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+}
 
 // navigation UI
 .filters ul {
@@ -68,7 +72,7 @@ p a {
 // images
 .item {
   display: inline-block;
-  width: 18%;
+  width: 20%;
   padding: .3rem;
 }
 .item:hover {

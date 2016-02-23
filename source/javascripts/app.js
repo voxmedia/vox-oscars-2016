@@ -24,6 +24,7 @@ $(document).foundation();
     // my problem is i'm appending null attr when i'd rather skip them
     _.each(DATA, function(d, i) {
       var $item;
+      var slug = slugify(d.film);
 
       if (d.bestPicture) {
         $item = $('<div class="reveal-link item ' + "data-filter=" + d.bestPicture + '"></div>');
@@ -78,7 +79,7 @@ $(document).foundation();
         $item.data('rank', d.rank);
         $item.data('about', d.about);
         $item.data('video', d.video);
-        $item.html('<img src="' + "http://ea.vox-cdn.com/production/vox-bowie-sortable/images/august" + '.png" />');
+        $item.html('<img src="' + "/images/" + slug + '.png" />');
         // $item.html('<img src="' + "http://ea.vox-cdn.com/production/vox-bowie-sortable/images/" + slug + '.png" />');
       fragment.append($item);
     });
@@ -99,7 +100,10 @@ $(document).foundation();
               name: function(elem) {
                   var name = $(elem).data('name');
                   if (name.substring(0,4) === "The ") {
-                      name = name.substring(4, name.length);
+                    name = name.substring(4, name.length);
+                  // } else if (name.substring(0,1) === "A ") {
+                  //   name = name.substring(1, name.length);
+                  //   console.log(name);
                   }
                   return name;
               },

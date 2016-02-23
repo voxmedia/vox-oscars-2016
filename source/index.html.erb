@@ -17,17 +17,14 @@ DATA = <%= data.data.to_json %>;
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>
-<div class="row">
-  <div id="sorters" class="sorters filters large-6 medium-6 small-6 columns">
-      <ul id="sort-list">
-          <li class="filter"><strong>SORT BY</strong></li>
-          <li><a href="#" data-sort="name"><div class="filter"></div>Film</a></li>
-          <li class="active"><a href="#" data-sort="rank"><div class="filter"></div>Rank</a></li>
-      </ul>
+<div class="interactive-wide">
+  <div id="sorters" class="sorters">
+    <div class="button-group filters-button-group">
+      <button class="button" data-sort="name">Film</button>
+      <button class="button" data-sort="rank">Rank</button>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div id="filters" class="sorters filters small-12 columns">
+  <div id="filters" class="sorters">
     <div class="button-group filters-button-group">
       <button class="button" data-filter="*">all</button>
       <button class="button" data-filter=".bestPicture">Best Picture</button>
@@ -56,41 +53,7 @@ DATA = <%= data.data.to_json %>;
       <button class="button" data-filter=".soundEditing">Sound Editing</button>
     </div>
   </div>
-</div>
-<!-- <div class="row"> -->
-  <!-- <div id="filters" class="filters large-12 medium-12 small-12 columns"> -->
-      <!-- <ul id="filters">
-          <li class="filter"><strong>FILTER BY</strong></li>
-          <li><a href="#" data-filter="*">All</a></li>
-          <li><a href="#" data-filter=".bestPicture">Best Picture</a></li>
-          <li><a href="#" data-filter=".actor">Actor</a></li>
-          <li><a href="#" data-filter=".actress">Actress</a></li>
-          <li><a href="#" data-filter=".supportingActor">Supporting Actor</a></li>
-          <li><a href="#" data-filter=".supportingActress">Supporting Actress</a></li>
-          <li><a href="#" data-filter=".directing">Directing</a></li>
-          <li><a href="#" data-filter=".screenplayOriginal">Original Screenplay</a></li>
-          <li><a href="#" data-filter=".screenplayAdapted">Adapted Screenplay</a></li>
-          <li><a href="#" data-filter=".documentaryFeature">Documentary Feature</a></li>
-          <li><a href="#" data-filter=".documentaryShort">Documentary Short</a></li>
-          <li><a href="#" data-filter=".foreign">Foreign</a></li>
-          <li><a href="#" data-filter=".shortFilmLive">Short Film (Live)</a></li>
-          <li><a href="#" data-filter=".shortFilmAnimated">Short Film (Animated)</a></li>
-          <li><a href="#" data-filter=".animated">Animated</a></li>
-          <li><a href="#" data-filter=".costume">Costume</a></li>
-          <li><a href="#" data-filter=".makeup">Makeup</a></li>
-          <li><a href="#" data-filter=".production">Production</a></li>
-          <li><a href="#" data-filter=".filmEditing">Film Editing</a></li>
-          <li><a href="#" data-filter=".visual">Visual</a></li>
-          <li><a href="#" data-filter=".cinematography">Cinematography</a></li>
-          <li><a href="#" data-filter=".song">Original Song</a></li>
-          <li><a href="#" data-filter=".score">Original Score</a></li>
-          <li><a href="#" data-filter=".soundMixing">Sound Mixing</a></li>
-          <li><a href="#" data-filter=".soundEditing">Sound Editing</a></li>
-      </ul> -->
-  <!-- </div> -->
-<!-- </div> -->
-<div class="row">
-  <div id="isotope-holder" class="large-12 large-centered columns isotope-holder"></div>
+  <div id="isotope-holder" class="isotope-holder"></div>
 </div>
 <div id="modal" class="modal hide"></div>
 <div id="footer" class="row footer">
