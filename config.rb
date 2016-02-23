@@ -123,7 +123,7 @@ configure :build do
   # Add unique IDs to asset filenames. You want this. Disabling it
   # may fix a problem, but it will cause problems for your users
   # that you may not see.
-  activate :asset_hash
+  activate :asset_hash, :ignore => [/^images/]
 
   # Package and compress all our javascripts and styles
   activate :minify_javascript
