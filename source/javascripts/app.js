@@ -29,7 +29,7 @@ $(document).foundation();
       $item.data('about', d.about);
       $item.data('video', d.video);
       // $item.html('<img src="' + "/images/" + slug + '.png" />');
-      $item.html('<div class="img-title"><img src="' + "/images/" + slug + '.png" />' + '<span>'+ d.film + '</span></div>');
+      $item.html('<div class="img-title"><img src="' + "http://ea.vox-cdn.com/production/vox-oscars-2016/images/" + slug + '.png" />' + '<span>'+ d.film + '</span></div>');
 
       fragment.append($item);
     });

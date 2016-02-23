@@ -29,10 +29,8 @@ To setup chorus deployment...
     git push chorus master
 
 TO DO:
-- filters become dropdown on mobile viewport
-
+- filters become dropdown on mobile viewport?
 - add overall header
-- hardcode image paths // $item.html('<img src="' + "http://ea.vox-cdn.com/production/vox-bowie-sortable/images/" + slug + '.png" />');
 
 asked:
 - Do we want to include movie availability? (filter)

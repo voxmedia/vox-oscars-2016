@@ -51,6 +51,7 @@ button.active, .button.active {
   width: calc(100% - 1.875rem);
   max-width: 1100px;
   margin: 0 auto 2rem;
+  margin-top: -20px;
 }
 
 
@@ -73,21 +74,21 @@ button.active, .button.active {
 
 // image movie title container
 .img-title {
-   position: relative;
-   width: 100%;
-   span {
-      color: $white;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      font-weight: 500;
-      font-size: 0.6rem;
-      padding: 0 3px;
-      line-height: 150%;
-      background: rgb(0, 0, 0); /* fallback color */
-      background: rgba($black, 0.5);
-      @media only screen and (min-width: $break_small) {
-        font-size: 1rem;
-      }
+  position: relative;
+  width: 100%;
+  span {
+    color: $white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-weight: 500;
+    font-size: 0.6rem;
+    padding: 0 3px;
+    line-height: 150%;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba($black, 0.5);
+    @media only screen and (min-width: $break_small) {
+      font-size: 1rem;
     }
+  }
 }
