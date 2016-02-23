@@ -53,6 +53,7 @@ button.active, .button.active {
   margin: 0 auto 2rem;
 }
 
+
 // items styles
 .item {
   display: inline-block;
@@ -70,11 +71,23 @@ button.active, .button.active {
   filter:alpha(opacity=80);
 }
 
-.isotope-item {
-  z-index: 2;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
+// image movie title container
+.img-title {
+   position: relative;
+   width: 100%;
+   span {
+      color: $white;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      font-weight: 500;
+      font-size: 0.6rem;
+      padding: 0 3px;
+      line-height: 150%;
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba($black, 0.5);
+      @media only screen and (min-width: $break_small) {
+        font-size: 1rem;
+      }
+    }
 }

@@ -28,7 +28,8 @@ $(document).foundation();
       $item.data('rank', d.rank);
       $item.data('about', d.about);
       $item.data('video', d.video);
-      $item.html('<img src="' + "/images/" + slug + '.png" />');
+      // $item.html('<img src="' + "/images/" + slug + '.png" />');
+      $item.html('<div class="img-title"><img src="' + "/images/" + slug + '.png" />' + '<span>'+ d.film + '</span></div>');
 
       fragment.append($item);
     });

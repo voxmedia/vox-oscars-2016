@@ -29,7 +29,6 @@ To setup chorus deployment...
     git push chorus master
 
 TO DO:
-- add movie title to item
 - filters become dropdown on mobile viewport
 
 - add overall header
