@@ -10,6 +10,38 @@ p a {
   font-weight: bold;
 }
 
+button, .button {
+  background-color: darken($vox-sun, 13);
+  margin: 0 0 0.25rem;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  font-size: 0.8rem;
+  &:hover {
+    background-color: darken($vox-sun, 10);
+  }
+  @media only screen and (min-width: $break_small) {
+    padding: 0.625rem 0.75rem 0.6875rem 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+button.active, .button.active {
+  background-color: darken($vox-sun, 20);
+  &:hover {
+    background-color: darken($vox-sun, 20);
+  }
+}
+
+.button-group {
+  padding-bottom: 0.5rem;
+  @media only screen and (min-width: $break_small) {
+    padding-bottom: 2rem;
+  }
+}
+
+.ui-action {
+  font-size: 0.94rem;
+}
+
 .isotope-holder {
   position: relative;
   width: 100%;
@@ -21,20 +53,14 @@ p a {
   margin: 0 auto 2rem;
 }
 
-// on smaller breakpoints, hide sort by and filter by text
-#sort-list > li:nth-child(1),
-#filter-list > li:nth-child(1) {
-  display: none;
-  @media only screen and (min-width: $break_small) {
-    display: block;
-  }
-}
-
-// images
+// items styles
 .item {
   display: inline-block;
-  width: 20%;
+  width: 33%;
   padding: .3rem;
+  @media only screen and (min-width: $break_small) {
+    width: 20%;
+  }
 }
 .item:hover {
   cursor:pointer;

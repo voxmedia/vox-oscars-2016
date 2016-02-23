@@ -19,17 +19,19 @@ DATA = <%= data.data.to_json %>;
 </div>
 <div class="interactive-wide">
   <div class="button-group sorters-button-group">
+    <div class="ui-action"><strong>Sort by</strong></div>
+    <button class="button active" data-sort="rank">Rank</button>
     <button class="button" data-sort="name">Film</button>
-    <button class="button" data-sort="rank">Rank</button>
   </div>
   <div class="button-group filters-button-group">
-    <button class="button" data-filter="*">all</button>
+    <div class="ui-action"><strong>Filter by</strong></div>
+    <button class="button active" data-filter="*">all</button>
     <button class="button" data-filter=".bestPicture">Best Picture</button>
     <button class="button" data-filter=".actor">Actor</button>
     <button class="button" data-filter=".actress">Actress</button>
+    <button class="button" data-filter=".directing">Directing</button>
     <button class="button" data-filter=".supportingActor">Supporting Actor</button>
     <button class="button" data-filter=".supportingActress">Supporting Actress</button>
-    <button class="button" data-filter=".directing">Directing</button>
     <button class="button" data-filter=".screenplayOriginal">Original Screenplay</button>
     <button class="button" data-filter=".screenplayAdapted">Adapted Screenplay</button>
     <button class="button" data-filter=".documentaryFeature">Documentary Feature</button>
