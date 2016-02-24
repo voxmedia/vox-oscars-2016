@@ -29,16 +29,10 @@ To setup chorus deployment...
     git push chorus master
 
 TO DO:
-- break up filters by category (get approval from Todd on categorization)
-- add movie availability filter: "in theaters," "digital download," "streaming."
-
 - photos
   - batch grayscale all
   - determine shading from like to dislike
-  - ranking # in corner
-
 - title w/ Todd's face
-
 - why is it so jumpy on filter?
 
 Post Publication:
