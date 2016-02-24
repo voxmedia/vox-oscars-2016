@@ -29,7 +29,10 @@ To setup chorus deployment...
     git push chorus master
 
 TO DO:
+- send interactive to Tanya
+- remove what Todd said was wrong in filter
 - photos
+  - why is the CDN not updating?
   - batch grayscale all
   - determine shading from like to dislike
 - title w/ Todd's face
