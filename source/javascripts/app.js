@@ -22,7 +22,7 @@ $(document).foundation();
 
     _.each(DATA, function(d, i) {
       var slug = slugify(d.film);
-      var $item = $('<div class="reveal-link item ' + d.awardType + '"></div>');
+      var $item = $('<div class="reveal-link item ' + d.awardType + ' '+ d.availabilityFilter + '"></div>');
 
       $item.data('name', d.film);
       $item.data('nameIDMB', d.filmIDMB);
@@ -73,6 +73,22 @@ $(document).foundation();
     $('.filters-button-group').on( 'click', 'button', function() {
       var filterValue = $( this ).attr('data-filter');
       isoContainer.isotope({ filter: filterValue });
+      $('.button.dropdown').removeClass('active');
+    });
+
+    $('#filters a').click(function(e){
+      var selector = $(this).attr('data-filter');
+      isoContainer.isotope({ filter: selector });
+      $('.major').removeClass('active');
+
+      // change the value of the dropdown
+      var newOption = e.currentTarget.textContent;
+      $('.button.dropdown.active').html( newOption );
+
+      // close dropdown menu on select
+      $('ul').removeClass('open f-open-dropdown');
+
+      return false;
     });
 
     // sort by rank / film name

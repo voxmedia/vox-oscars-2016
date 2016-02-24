@@ -30,41 +30,52 @@ DATA = <%= data.data.to_json %>;
   </div>
   <div class="button-group filters-button-group">
     <div class="ui-action"><strong>Filter by major award categories</strong></div>
-    <button class="button active" data-filter="*">all</button>
-    <button class="button" data-filter=".bestPicture">Best Picture</button>
-    <button class="button" data-filter=".actor">Actor</button>
-    <button class="button" data-filter=".actress">Actress</button>
-    <button class="button" data-filter=".directing">Directing</button>
-    <button class="button" data-filter=".supportingActor">Supporting Actor</button>
-    <button class="button" data-filter=".supportingActress">Supporting Actress</button>
-    <button class="button" data-filter=".screenplayOriginal">Original Screenplay</button>
-    <button class="button" data-filter=".screenplayAdapted">Adapted Screenplay</button>
+    <button class="button major active" data-filter="*">all</button>
+    <button class="button major" data-filter=".bestPicture">Best Picture</button>
+    <button class="button major" data-filter=".actor">Actor</button>
+    <button class="button major" data-filter=".actress">Actress</button>
+    <button class="button major" data-filter=".directing">Directing</button>
+    <button class="button major" data-filter=".supportingActor">Supporting Actor</button>
+    <button class="button major" data-filter=".supportingActress">Supporting Actress</button>
+    <button class="button major" data-filter=".screenplayOriginal">Original Screenplay</button>
+    <button class="button major" data-filter=".screenplayAdapted">Adapted Screenplay</button>
   </div>
 
-  <!-- <div class="button-group filters-button-group">
-    <div class="ui-action"><strong>Filter by</strong></div>
-    <button class="button" data-filter=".screenplayOriginal">Original Screenplay</button>
-    <button class="button" data-filter=".screenplayAdapted">Adapted Screenplay</button>
-    <button class="button" data-filter=".documentaryFeature">Documentary (Feature)</button>
-    <button class="button" data-filter=".documentaryShort">Documentary (Short Subject)</button>
-    <button class="button" data-filter=".foreign">Foreign Language Film</button>
-    <button class="button" data-filter=".shortFilmLive">Short Film (Live Action)</button>
-    <button class="button" data-filter=".shortFilmAnimated">Short Film (Animated)</button>
-    <button class="button" data-filter=".animated">Animated Feature</button>
-  </div> -->
-  <!-- <div class="button-group filters-button-group">
-    <div class="ui-action"><strong>Filter by</strong></div>
-    <button class="button tiny" data-filter=".costume">Costume Design</button>
-    <button class="button tiny" data-filter=".makeup">Makeup and Hairstyling</button>
-    <button class="button tiny" data-filter=".production">Production Design</button>
-    <button class="button tiny" data-filter=".filmEditing">Film Editing</button>
-    <button class="button tiny" data-filter=".visual">Visual Effects</button>
-    <button class="button tiny" data-filter=".cinematography">Cinematography</button>
-    <button class="button tiny" data-filter=".song">Original Song</button>
-    <button class="button tiny" data-filter=".score">Original Score</button>
-    <button class="button tiny" data-filter=".soundMixing">Sound Mixing</button>
-    <button class="button tiny" data-filter=".soundEditing">Sound Editing</button>
-  </div> -->
-  <div id="isotope-holder" class="isotope-holder"></div>
+<div id="filters" class="button-group filters-button-group">
+  <div class="ui-action"><strong>Filter by other award categories and how to watch the films</strong></div>
+  <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Documentaries, shorts and animated</button>
+  <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+    <li><a href="#" data-filter=".documentaryFeature">Documentary (Feature)</a></li>
+    <li><a href="#" data-filter=".documentaryShort">Documentary (Short Subject)</a></li>
+    <li><a href="#" data-filter=".foreign">Foreign Language Film</a></li>
+    <li><a href="#" data-filter=".shortFilmLive">Short Film (Live Action)</a></li>
+    <li><a href="#" data-filter=".shortFilmAnimated">Short Film (Live Animated)</a></li>
+    <li><a href="#" data-filter=".animated">Animated Feature</a></li>
+  </ul>
+  <button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="button dropdown">Production and design</button>
+  <ul id="drop2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+    <li><a href="#" data-filter=".costume">Costume Design</a></li>
+    <li><a href="#" data-filter=".makeup">Makeup and Hairstyling</a></li>
+    <li><a href="#" data-filter=".production">Production Design</a></li>
+    <li><a href="#" data-filter=".filmEditing">Film Editing</a></li>
+    <li><a href="#" data-filter=".visual">Visual Effects</a></li>
+    <li><a href="#" data-filter=".cinematography">Cinematography</a></li>
+    <li><a href="#" data-filter=".song">Original Song</a></li>
+    <li><a href="#" data-filter=".score">Original Score</a></li>
+    <li><a href="#" data-filter=".soundMixing">Sound Mixing</a></li>
+    <li><a href="#" data-filter=".soundEditing">Sound Editing</a></li>
+  </ul>
+  <button href="#" data-dropdown="drop3" aria-controls="drop3" aria-expanded="false" class="button dropdown">How to watch</button>
+  <ul id="drop3" data-dropdown-content class="f-dropdown" aria-hidden="true">
+    <li><a href="#" data-filter=".ComingSoon">Coming Soon</a></li>
+    <li><a href="#" data-filter=".Streaming">Streaming</a></li>
+    <li><a href="#" data-filter=".DigitalDownload">Digital Download</a></li>
+    <li><a href="#" data-filter=".InTheaters">In Theaters</a></li>
+    <li><a href="#" data-filter=".Streaming">Streaming</a></li>
+    <li><a href="#" data-filter=".DVDOnly">DVD Only</a></li>
+  </ul>
+</div>
+
+<div id="isotope-holder" class="isotope-holder"></div>
 </div>
 <div id="modal" class="modal hide"></div>

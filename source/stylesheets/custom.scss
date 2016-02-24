@@ -34,8 +34,12 @@ button.active, .button.active {
 .button-group {
   padding-bottom: 0.5rem;
   @media only screen and (min-width: $break_small) {
-    padding-bottom: 2rem;
+    padding-bottom: 0.8rem;
   }
+}
+
+button.button.dropdown {
+  text-transform: none;
 }
 
 .ui-action {
