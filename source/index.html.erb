@@ -13,18 +13,23 @@ DATA = <%= data.data.to_json %>;
 </div>
 <div class="row">
   <div class="columns large-offset-1 large-10 medium-12">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>This year, 57 movies are nominated for Oscars.</p>
+    <p>They range from massive, world-beating success stories — like the 12-times-nominated box office hit <i>The Revenant</i> and the record-breaking <i>Star Wars: The Force Awakens</i> — to much smaller films you've probably never heard of unless you have the nomination list committed to heart (I see you, <i>Claude Lanzmann: Spectres of the Shoah</i>).</p>
+    <p>In the pre-internet days, seeing every one of a given year's Oscar-nominated films was all but impossible. If you lived in New York or Los Angeles, you could catch maybe 90 percent of them, but the more obscure ones would often disappear from theaters without a trace.</p>
+    <p>These days, you really <i>can</i> watch the vast majority of the films if you put your mind to it — and you live in a reasonably film-friendly metropolis. Online streaming, digital rentals, and the occasional trip to the arthouse have allowed me to plow my way through all 57 contenders for the 2016 Oscars.</p>
+    <p>Yes, even <i>Fifty Shades of Grey</i>.</p>
+    <p>(Yes, <i>Fifty Shades of Grey</i> is nominated for an Oscar.)</p>
+    <p>But why stop there? Below, I've laid out my complete ranking of all 57 films, as well as information on what they're nominated for and where you can watch them right now. You've still got a couple of days left before the ceremony on Sunday, February 28. You could watch all 57 too!</p>
   </div>
 </div>
 <div class="interactive-wide">
   <div class="button-group sorters-button-group">
     <div class="ui-action"><strong>Sort by</strong></div>
-    <button class="button active" data-sort="rank">Rank</button>
-    <button class="button" data-sort="name">Film</button>
+    <button class="button active" data-sort="rank">Todd's Rating</button>
+    <button class="button" data-sort="name">Movie Title</button>
   </div>
-  <div class="button-group filters-button-group lg-screen">
-    <div class="ui-action"><strong>Filter by</strong></div>
+  <div class="button-group filters-button-group">
+    <div class="ui-action"><strong>Filter by major award categories</strong></div>
     <button class="button active" data-filter="*">all</button>
     <button class="button" data-filter=".bestPicture">Best Picture</button>
     <button class="button" data-filter=".actor">Actor</button>
@@ -34,23 +39,32 @@ DATA = <%= data.data.to_json %>;
     <button class="button" data-filter=".supportingActress">Supporting Actress</button>
     <button class="button" data-filter=".screenplayOriginal">Original Screenplay</button>
     <button class="button" data-filter=".screenplayAdapted">Adapted Screenplay</button>
-    <button class="button" data-filter=".documentaryFeature">Documentary Feature</button>
-    <button class="button" data-filter=".documentaryShort">Documentary Short</button>
-    <button class="button" data-filter=".foreign">Foreign</button>
-    <button class="button" data-filter=".shortFilmLive">Short Film (Live)</button>
-    <button class="button" data-filter=".shortFilmAnimated">Short Film (Animated)</button>
-    <button class="button" data-filter=".animated">Animated</button>
-    <button class="button" data-filter=".costume">Costume</button>
-    <button class="button" data-filter=".makeup">Makeup</button>
-    <button class="button" data-filter=".production">Production</button>
-    <button class="button" data-filter=".filmEditing">Film Editing</button>
-    <button class="button" data-filter=".visual">Visual Effects</button>
-    <button class="button" data-filter=".cinematography">Cinematography</button>
-    <button class="button" data-filter=".song">Original Song</button>
-    <button class="button" data-filter=".score">Original Score</button>
-    <button class="button" data-filter=".soundMixing">Sound Mixing</button>
-    <button class="button" data-filter=".soundEditing">Sound Editing</button>
   </div>
+
+  <!-- <div class="button-group filters-button-group">
+    <div class="ui-action"><strong>Filter by</strong></div>
+    <button class="button" data-filter=".screenplayOriginal">Original Screenplay</button>
+    <button class="button" data-filter=".screenplayAdapted">Adapted Screenplay</button>
+    <button class="button" data-filter=".documentaryFeature">Documentary (Feature)</button>
+    <button class="button" data-filter=".documentaryShort">Documentary (Short Subject)</button>
+    <button class="button" data-filter=".foreign">Foreign Language Film</button>
+    <button class="button" data-filter=".shortFilmLive">Short Film (Live Action)</button>
+    <button class="button" data-filter=".shortFilmAnimated">Short Film (Animated)</button>
+    <button class="button" data-filter=".animated">Animated Feature</button>
+  </div> -->
+  <!-- <div class="button-group filters-button-group">
+    <div class="ui-action"><strong>Filter by</strong></div>
+    <button class="button tiny" data-filter=".costume">Costume Design</button>
+    <button class="button tiny" data-filter=".makeup">Makeup and Hairstyling</button>
+    <button class="button tiny" data-filter=".production">Production Design</button>
+    <button class="button tiny" data-filter=".filmEditing">Film Editing</button>
+    <button class="button tiny" data-filter=".visual">Visual Effects</button>
+    <button class="button tiny" data-filter=".cinematography">Cinematography</button>
+    <button class="button tiny" data-filter=".song">Original Song</button>
+    <button class="button tiny" data-filter=".score">Original Score</button>
+    <button class="button tiny" data-filter=".soundMixing">Sound Mixing</button>
+    <button class="button tiny" data-filter=".soundEditing">Sound Editing</button>
+  </div> -->
   <div id="isotope-holder" class="isotope-holder"></div>
 </div>
 <div id="modal" class="modal hide"></div>

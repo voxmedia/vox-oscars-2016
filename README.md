@@ -29,12 +29,18 @@ To setup chorus deployment...
     git push chorus master
 
 TO DO:
-- filters become dropdown on mobile viewport?
-- add overall header
+- break up filters by category (get approval from Todd on categorization)
+- add movie availability filter: "in theaters," "digital download," "streaming."
 
-asked:
-- Do we want to include movie availability? (filter)
-- Need the ranks
-- Will each movie have a popup description? Or should I just plan to add the movie title to the image itself?
-  - if so, embed video correctly
-- Fact check my classes
+- photos
+  - batch grayscale all
+  - determine shading from like to dislike
+  - ranking # in corner
+
+- title w/ Todd's face
+
+- why is it so jumpy on filter?
+
+Post Publication:
+- How do I want to add a winner?
+  - little oscar person added in the corner

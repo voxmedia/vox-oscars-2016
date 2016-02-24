@@ -25,11 +25,15 @@ $(document).foundation();
       var $item = $('<div class="reveal-link item ' + d.awardType + '"></div>');
 
       $item.data('name', d.film);
+      $item.data('nameIDMB', d.filmIDMB);
       $item.data('rank', d.rank);
+      $item.data('nominated', d.nominated);
       $item.data('about', d.about);
+      $item.data('link', d.link);
       $item.data('video', d.video);
-      // $item.html('<img src="' + "/images/" + slug + '.png" />');
-      $item.html('<div class="img-title"><img src="' + "http://ea.vox-cdn.com/production/vox-oscars-2016/images/" + slug + '.png" />' + '<span>'+ d.film + '</span></div>');
+      $item.data('availability', d.availability);
+      $item.html('<div class="img-title"><img src="' + "images/" + slug + '.png" />' + '<span class="rank-title">' + d.rank + '</span>' + '<span class="film-title">'+ d.film + '</span></div>');
+      // $item.html('<div class="img-title"><img src="' + "http://ea.vox-cdn.com/production/vox-oscars-2016/images/" + slug + '.png" />' + '<span>'+ d.film + '</span></div>');
 
       fragment.append($item);
     });
@@ -93,9 +97,12 @@ $(document).foundation();
 
         var fillModalTemplate = function () {
           var html = modalTemplate({
-            name: $this.data('name'),
+            name: $this.data('nameIDMB'),
+            nominated: $this.data('nominated'),
             about: $this.data('about'),
-            video: $this.data('video')
+            link: $this.data('link'),
+            video: $this.data('video'),
+            availability: $this.data('availability')
           });
           return html;
         };

@@ -52,7 +52,7 @@ set :vertical, 'vox'
 set :publish_date, '2016-02-17 15:41'
 
 # The authors of this graphic
-set :authors, 'Sarah Frostenson'
+set :authors, 'Sarah Frostenson, Todd VanDerWerff'
 
 # Theme: dark or light
 set :theme, 'light'
