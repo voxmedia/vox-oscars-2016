@@ -29,15 +29,12 @@ To setup chorus deployment...
     git push chorus master
 
 TO DO:
-- send interactive to Tanya
 - photos
   - batch grayscale all
   - determine shading from like to dislike
 - title w/ Todd's face
-- soo's bit on circles
+
 - why is it so jumpy on filter?
-
-
 - need social image
 
 Post Publication:

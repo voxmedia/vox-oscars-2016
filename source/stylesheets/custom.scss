@@ -99,18 +99,24 @@ button.button.dropdown {
   span.rank-title {
     color: $white;
     position: absolute;
-    top: 1px;
-    left: 1px;
+    top: 0;
+    left: 0;
     font-weight: 500;
-    font-size: 0.6rem;
-    width: 16px;
+    font-size: 0.8rem;
     text-align: center;
     border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: .20rem;
+    line-height: 1.5rem;
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba($vox-azure, 1);
     @media only screen and (min-width: $break_small) {
       font-size: 1.1rem;
-      width: 32px;
+      width: 2rem;
+      height: 2rem;
+      margin: .20rem;
+      line-height: 2rem;
     }
   }
 }
