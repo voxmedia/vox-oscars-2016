@@ -75,13 +75,49 @@ $(document).foundation();
       $('.button.dropdown').removeClass('active');
     });
 
-    $('#filters a').click(function(e){
+    $('#drop1 a').click(function(e){
       var selector = $(this).attr('data-filter');
       isoContainer.isotope({ filter: selector });
       $('.major').removeClass('active');
 
-      $('li a').removeClass('selected');
-      $(e.currentTarget).addClass('selected');
+      $('li a').removeClass('selected-1');
+      $(e.currentTarget).addClass('selected-1');
+
+      // change the value of the dropdown
+      var newOption = e.currentTarget.textContent;
+      $('.button.dropdown.active').html( newOption );
+
+      // close dropdown menu on select
+      $('ul').removeClass('open f-open-dropdown');
+
+      return false;
+    });
+
+    $('#drop2 a').click(function(e){
+      var selector = $(this).attr('data-filter');
+      isoContainer.isotope({ filter: selector });
+      $('.major').removeClass('active');
+
+      $('li a').removeClass('selected-2');
+      $(e.currentTarget).addClass('selected-2');
+
+      // change the value of the dropdown
+      var newOption = e.currentTarget.textContent;
+      $('.button.dropdown.active').html( newOption );
+
+      // close dropdown menu on select
+      $('ul').removeClass('open f-open-dropdown');
+
+      return false;
+    });
+
+    $('#drop3 a').click(function(e){
+      var selector = $(this).attr('data-filter');
+      isoContainer.isotope({ filter: selector });
+      $('.major').removeClass('active');
+
+      $('li a').removeClass('selected-3');
+      $(e.currentTarget).addClass('selected-3');
 
       // change the value of the dropdown
       var newOption = e.currentTarget.textContent;
