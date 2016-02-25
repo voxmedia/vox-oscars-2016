@@ -44,7 +44,8 @@ DATA = <%= data.data.to_json %>;
 <div id="filters" class="button-group filters-button-group">
   <div class="ui-action"><strong>Filter by other award categories and how to watch the films</strong></div>
   <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Documentaries, shorts and animated</button>
-  <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  <ul id="drop1" data-dropdown-content class="f-dropdown dropdown-behaviors" aria-hidden="true">
+    <li><a class="selected" href="#" data-filter="*">Documentaries, shorts and animated</a></li>
     <li><a href="#" data-filter=".documentaryFeature">Documentary (Feature)</a></li>
     <li><a href="#" data-filter=".documentaryShort">Documentary (Short Subject)</a></li>
     <li><a href="#" data-filter=".foreign">Foreign Language Film</a></li>
@@ -53,7 +54,8 @@ DATA = <%= data.data.to_json %>;
     <li><a href="#" data-filter=".animated">Animated Feature</a></li>
   </ul>
   <button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="button dropdown">Production and design</button>
-  <ul id="drop2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  <ul id="drop2" data-dropdown-content class="f-dropdown dropdown-behaviors" aria-hidden="true">
+    <li><a class="selected" href="#" data-filter="*">Production and design</a></li>
     <li><a href="#" data-filter=".costume">Costume Design</a></li>
     <li><a href="#" data-filter=".makeup">Makeup and Hairstyling</a></li>
     <li><a href="#" data-filter=".production">Production Design</a></li>
@@ -66,7 +68,8 @@ DATA = <%= data.data.to_json %>;
     <li><a href="#" data-filter=".soundEditing">Sound Editing</a></li>
   </ul>
   <button href="#" data-dropdown="drop3" aria-controls="drop3" aria-expanded="false" class="button dropdown">How to watch</button>
-  <ul id="drop3" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  <ul id="drop3" data-dropdown-content class="f-dropdown dropdown-behaviors" aria-hidden="true">
+    <li><a class="selected" href="#" data-filter="*">How to watch</a></li>
     <li><a href="#" data-filter=".ComingSoon">Coming Soon</a></li>
     <li><a href="#" data-filter=".Streaming">Streaming</a></li>
     <li><a href="#" data-filter=".DigitalDownload">Digital Download</a></li>

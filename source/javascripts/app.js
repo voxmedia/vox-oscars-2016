@@ -80,6 +80,9 @@ $(document).foundation();
       isoContainer.isotope({ filter: selector });
       $('.major').removeClass('active');
 
+      $('li a').removeClass('selected');
+      $(e.currentTarget).addClass('selected');
+
       // change the value of the dropdown
       var newOption = e.currentTarget.textContent;
       $('.button.dropdown.active').html( newOption );
