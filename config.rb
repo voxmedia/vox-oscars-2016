@@ -58,6 +58,7 @@ set :authors, 'Sarah Frostenson, Todd VanDerWerff'
 set :theme, 'light'
 
 set :title, data.microcopy['title']
+set :hed, data.microcopy['hed']
 set :meta_description, data.microcopy['meta_description']
 
 # Default text that goes into tweet and pin buttons
