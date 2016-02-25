@@ -28,11 +28,7 @@ To setup chorus deployment...
     bundle exec rake add_chorus_remote
     git push chorus master
 
-TO DO:
-- photos
-  - batch grayscale all
-  - determine shading from like to dislike
-  
+TO DO:  
 Post Publication:
 - How do I want to add a winner?
   - little oscar person added in the corner (how to do this? ideally, not uploading a new image)
