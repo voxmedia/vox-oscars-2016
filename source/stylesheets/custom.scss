@@ -64,6 +64,7 @@ button.button.dropdown {
   display: inline-block;
   width: 33%;
   padding: .3rem;
+  transition: opacity 0.5s, background-color 0.25s linear, border-color 0.25s linear;
   @media only screen and (min-width: $break_small) {
     width: 20%;
   }
