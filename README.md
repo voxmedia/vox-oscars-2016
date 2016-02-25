@@ -32,4 +32,4 @@ TO DO:
 Post Publication:
 - How do I want to add a winner?
   - little oscar person added in the corner (how to do this? ideally, not uploading a new image)
-- What is the proper way to add an image?
+- can I make the page less jumpy?
