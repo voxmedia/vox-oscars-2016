@@ -32,11 +32,7 @@ TO DO:
 - photos
   - batch grayscale all
   - determine shading from like to dislike
-- title w/ Todd's face
-
-- why is it so jumpy on filter?
-- need social image
-
+  
 Post Publication:
 - How do I want to add a winner?
   - little oscar person added in the corner (how to do this? ideally, not uploading a new image)
