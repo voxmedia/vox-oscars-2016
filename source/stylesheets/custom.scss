@@ -170,21 +170,73 @@ button.button.dropdown {
 	height: 100%;
 }
 
-// responsive svg
-.svg-container{
- display: inline-block;
- position: relative;
- width: 50%;
- padding-bottom: 60%; /* depends on svg ratio, for my zebra height/width = 1.2 so padding-bottom = 50% * 1.2 = 60% */
- vertical-align: middle; /* top | middle | bottom ... do what you want */
-}
-
-
-.oscar-logo { /* svg into : object, img or inline */
+// svg positioning
+.oscar-logo {
   display: block;
   position: absolute;
   top: 7px;
   right: 0;
   width: 30px;
-  height: 40px;
+  height: 30px;
+  @media only screen and (min-width: $break_small) {
+    height: 40px;
+  }
+}
+
+span.oscar-win {
+  color: $white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: .20rem;
+  line-height: 1.5rem;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba($vox-azure, 1);
+  @media only screen and (min-width: $break_small) {
+    font-size: 1.1rem;
+    width: 2rem;
+    height: 2rem;
+    margin: .20rem;
+    line-height: 2rem;
+  }
+}
+
+.two {
+  right: 15px;
+}
+.three {
+  right: 30px;
+}
+.four {
+  right: 45px;
+}
+.five {
+  right: 60px;
+}
+.six {
+  right: 75px;
+}
+.seven {
+  right: 90px;
+}
+.eight {
+  right: 105px;
+}
+.nine {
+  right: 120px;
+}
+.ten {
+  right: 135px;
+}
+.eleven {
+  right: 135px;
+}
+.twelve {
+  right: 135px;
 }
