@@ -169,3 +169,22 @@ button.button.dropdown {
 	width: 100%;
 	height: 100%;
 }
+
+// responsive svg
+.svg-container{
+ display: inline-block;
+ position: relative;
+ width: 50%;
+ padding-bottom: 60%; /* depends on svg ratio, for my zebra height/width = 1.2 so padding-bottom = 50% * 1.2 = 60% */
+ vertical-align: middle; /* top | middle | bottom ... do what you want */
+}
+
+
+.oscar-logo { /* svg into : object, img or inline */
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 30px;
+  height: 40px;
+}

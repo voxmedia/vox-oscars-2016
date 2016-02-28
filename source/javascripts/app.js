@@ -32,7 +32,15 @@ $(document).foundation();
       $item.data('link', d.link);
       $item.data('video', d.video);
       $item.data('availability', d.availability);
-      $item.html('<div class="img-title"><img src="' + "http://ea.vox-cdn.com/production/vox-oscars-2016/images/" + slug + '0.png" />' + '<span class="rank-title">' + d.rank + '</span>' + '<span class="film-title">'+ d.film + '</span></div>');
+      if (d.won) {
+        $item.html('<div class="img-title"><img src="' + "http://ea.vox-cdn.com/production/vox-oscars-2016/images/" +
+                    slug + '0.png" />' + '<span class="rank-title">' + d.rank + '</span>' +
+                    '<span class="film-title">'+ d.film + '</span></div>' + '<object type="image/svg+xml" data="https://cdn3.vox-cdn.com/uploads/chorus_asset/file/6116393/oscar.0.svg" class="oscar-logo"></object>');
+      } else {
+        $item.html('<div class="img-title"><img src="' + "http://ea.vox-cdn.com/production/vox-oscars-2016/images/" +
+                    slug + '0.png" />' + '<span class="rank-title">' + d.rank + '</span>' +
+                    '<span class="film-title">'+ d.film + '</span></div>');
+      }
 
       fragment.append($item);
     });
