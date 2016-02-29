@@ -184,26 +184,26 @@ button.button.dropdown {
 }
 
 span.oscar-win {
-  color: $white;
+  color: $body-font-color;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 18px;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   text-align: center;
   border-radius: 50%;
-  width: 1.6rem;
-  height: 1.6rem;
-  margin: .20rem;
-  line-height: 1.5rem;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba($vox-azure, 1);
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: .35rem;
+  line-height: 1.1rem;
+  background: #FFF3C2; /* fallback color */
+  // background: #FFF3C2;
   @media only screen and (min-width: $break_small) {
-    font-size: 1.1rem;
-    width: 2rem;
-    height: 2rem;
-    margin: .20rem;
-    line-height: 2rem;
+    font-size: 0.6rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: .35rem;
+    line-height: 1.3rem;
   }
 }
 
