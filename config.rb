@@ -68,6 +68,8 @@ set :pinterest_text, data.microcopy['pinterest_text']
 
 # Default image used in open graph tags (facebook, twitter cards, etc)
 set :sharing_image, data.microcopy['social_image']
+set :tweet_animation, 'https://cdn1.vox-cdn.com/uploads/chorus_asset/file/6266199/Oscar_ranking_gif.0.mp4'
+set :tweet_animation_is_mp4, true
 
 # Disable responsive headers; mobile devices render site at 1024px wide
 # and enable pan and zoom.
